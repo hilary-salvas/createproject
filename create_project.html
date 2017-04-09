@@ -1,44 +1,35 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <title>Rochambeau</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="create-project.css">
+    <script src="create_project.js"></script>
+</head>
+<title> Tic Tac Toe</title>
 <body>
-    <h1>PLAY BINGO!</h1>
-    <table>
-        <tr>
-            <td>A</td>
-            <td>B</td>
-            <td>C</td>
-            <td>D</td>
-            <td>E</td>
-        </tr>
-        <tr>
-            <td>A</td>
-            <td>B</td>
-            <td>C</td>
-            <td>D</td>
-            <td>E</td>
-        </tr>
-        <tr>
-            <td>A</td>
-            <td>B</td>
-            <td>C</td>
-            <td>D</td>
-            <td>E</td>
-        </tr>
-        <tr>
-            <td>A</td>
-            <td>B</td>
-            <td>C</td>
-            <td>D</td>
-            <td>E</td>
-        </tr>
-        <tr>
-            <td>A</td>
-            <td>B</td>
-            <td>C</td>
-            <td>D</td>
-            <td>E</td>
-        </tr>
-    </table>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-1" onclick="mark('output1')"><div id="output1"></div></div>
+            <div class="col-sm-1"></div>
+            <div class="col-sm-1"></div>
+        </div>
+          <div class="row">
+            <div class="col-sm-1" onclick="mark('output4')"><div id="output4"></div></div>
+            <div class="col-sm-1"></div>
+            <div class="col-sm-1"></div>
+        </div>
+          <div class="row">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-1"></div>
+            <div class="col-sm-1"></div>
+        </div>
+    </div>
 </body>
 
 </html>
