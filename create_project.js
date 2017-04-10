@@ -1,3 +1,4 @@
+//this does nothing rn
 var board = {
     one: "",
     two: "",
@@ -10,14 +11,27 @@ var board = {
     nine: ""
 };
 
+var currentPlayer = "x";
+
+function changePlayer() {
+    if (currentPlayer == "x") {
+        currentPlayer = "o";
+    } else if (currentPlayer == "o") {
+        currentPlayer = "x";
+    }
+}
 
 function mark(outputId) {
     var outputText = "";
-    if (true == true) {
+    if (currentPlayer == "x") {
         outputText = "X";
         changeElementClass(outputId, "X");
+    } else if (currentPlayer == "o") {
+        outputText = "O";
+        changeElementClass(outputId, "O");
     }
     document.getElementById(outputId).innerHTML = outputText;
+    changePlayer();
 }
 
 function changeElementClass(id, className) {
@@ -25,32 +39,5 @@ function changeElementClass(id, className) {
     el.className = className;
 }
 
-/**
- * Represents a player
- * @constructor
- */
-function Player(){
-    this.choice = null;
-}
 
-//creates player objects. player1 is x and player2 is o
-var player1x = new Player();
-var player2o = new Player();
 
-/**
- * Stores the player2's choice
- * @param {number} choice 0,1,2 for rock, paper, scissors
- */
-function storePlayerChoice(choice) {
-    player1x.choice = choice;
-    console.log("My choice = " + player.choice);
-}
-
-/**
- * Stores the player1's choice
- * @param {number} choice box 0-8 for rock, paper, scissors
- */
-function storePlayerChoice(choice) {
-    player2o.choice = choice;
-    console.log("My choice = " + player.choice);
-}
