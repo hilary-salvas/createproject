@@ -1,41 +1,54 @@
-.row {
-    width: 227px;
-    height: 75px;
-}
+    .row {
+        width: 227px;
+        height: 75px;
+    }
 
-.col-sm-1 {
-    width: 75px;
-    height: 75px;
-    border: solid 1px orchid;
-    background-color: lavenderblush;
-}
+    .col-sm-1 {
+        width: 75px;
+        height: 75px;
+        border: solid 1px orchid;
+        background-color: lavenderblush;
+    }
 
-h1 {
-    color: steelblue;
-    padding-left: 69px;
-    font-family: sans-serif
-}
+    h1 {
+        color: steelblue;
+        padding-left: 69px;
+        font-family: sans-serif;
+        background-color: aliceblue;
+    }
 
-.X {
-    color: purple;
-    font-size: 45px;
-    text-align: center;
-    padding-top: 6px;
-}
+    .X {
+        color: purple;
+        font-size: 45px;
+        text-align: center;
+        padding-top: 6px;
+    }
 
-.O {
-    color: cornflowerblue;
-    font-size: 45px;
-    text-align: center;
-    padding-top: 6px;
-}
+    .O {
+        color: cornflowerblue;
+        font-size: 45px;
+        text-align: center;
+        padding-top: 6px;
+    }
 
-.button {
-    background-color: orchid;
-    border: blu;
-    color: lavenderblush;
-    padding: 2px 20px;
-    text-align: center;
-    display: inline-block;
-    font-size: 24px;
-}
+    .button {
+        background-color: orchid;
+        border: blu;
+        color: lavenderblush;
+        padding: 2px 20px;
+        text-align: center;
+        display: inline-block;
+        font-size: 24px;
+    }
+
+    .player {
+        color: darkmagenta;
+        font-family: sans-serif;
+        font-size: 20px;
+    }
+
+    .winner {
+        color: darkorchid;
+        font-size: 30px;
+        padding-left: 108px;
+    }
