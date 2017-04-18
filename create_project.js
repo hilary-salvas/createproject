@@ -143,4 +143,16 @@ function gameResult(outputId3) {
 
 }
 
+function clearBoard() {
+    document.getElementById('output1').innerHTML = "";
+    document.getElementById('output2').innerHTML = "";
+    document.getElementById('output3').innerHTML = "";
+    document.getElementById('output4').innerHTML = "";
+    document.getElementById('output5').innerHTML = "";
+    document.getElementById('output6').innerHTML = "";
+    document.getElementById('output7').innerHTML = "";
+    document.getElementById('output8').innerHTML = "";
+    document.getElementById('output9').innerHTML = "";
+}
+
 
