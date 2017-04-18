@@ -15,6 +15,7 @@
 <body>
     <div id="turn"></div>
     <div class="container">
+        <div id="player"></div>
         <div class="row">
             <div class="col-sm-1" onclick="mark('output1'); displayCurrentPlayer('player'); gameResult('winner')"><div id="output1"></div></div>
             <div class="col-sm-1" onclick="mark('output2'); displayCurrentPlayer('player'); gameResult('winner')"><div id="output2"></div></div>
@@ -31,9 +32,8 @@
             <div class="col-sm-1" onclick="mark('output9'); displayCurrentPlayer('player'); gameResult('winner')"><div id="output9"></div></div>
         </div>
     </div>
-    <div id="player"></div>
-    <div id="winner"></div>
     <input type="button" value="Clear Board" onclick="clearBoard()">
+    <div id="winner"></div>
 </body>
 
 </html>

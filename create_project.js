@@ -11,6 +11,8 @@ var board = {
     nine: ""
 };
 
+var turns = 0;
+
 var currentPlayer = "x";
 
 function mark(outputId) {
@@ -62,6 +64,7 @@ function mark(outputId) {
     }
     document.getElementById(outputId).innerHTML = outputText;
     changePlayer();
+    turns = turns + 1;
 }
 
 function changeElementClass(id, className) {
@@ -81,9 +84,11 @@ function displayCurrentPlayer(outputId2) {
     var outputText2 = "";
     if (currentPlayer == "x") {
         outputText2 = "Current Player: X";
+        changeElementClass(outputId2, "player");
     }
     else if (currentPlayer == "o") {
         outputText2 = "Current Player: O";
+        changeElementClass(outputId2, "player");
     }
     document.getElementById(outputId2).innerHTML = outputText2;
 }
@@ -139,6 +144,10 @@ function gameResult(outputId3) {
     else if (board.seven === "o" && board.eight === "o" && board.nine === "o") {
         outputText3 = "O wins!";
     }
+    else if (turns == 9) {
+        outputText3 = "Tie!";
+    }
+        changeElementClass(outputId3, "winner");
         document.getElementById(outputId3).innerHTML = outputText3;
 
 }
@@ -153,6 +162,17 @@ function clearBoard() {
     document.getElementById('output7').innerHTML = "";
     document.getElementById('output8').innerHTML = "";
     document.getElementById('output9').innerHTML = "";
+    board.one = "";
+    board.two = "";
+    board.three = "";
+    board.four = "";
+    board.five = "";
+    board.six = "";
+    board.seven = "";
+    board.eight = "";
+    board.nine = "";
+    currentPlayer = "x";
+    turns = 0;
 }
 
 

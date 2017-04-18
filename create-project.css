@@ -13,7 +13,8 @@
 h1 {
     color: steelblue;
     padding-left: 69px;
-    font-family: sans-serif
+    font-family: sans-serif;
+    background-color: aliceblue;
 }
 
 .X {
@@ -29,4 +30,16 @@ h1 {
     font-size: 45px;
     text-align: center;
     padding-top: 6px;
+}
+
+.player {
+    color: darkmagenta;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+.winner {
+    color: darkorchid;
+    font-size: 30px;
+    padding-left: 108px;
 }
