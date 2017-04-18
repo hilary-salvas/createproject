@@ -1,4 +1,4 @@
-//this does nothing rn
+
 var board = {
     one: "",
     two: "",
@@ -10,27 +10,8 @@ var board = {
     eight: "",
     nine: ""
 };
-var one = "";
-var two = "";
-var three = "";
-var four = "";
-var five = "";
-var six = "";
-var seven = "";
-var two = "";
-var two = "";
-var two = "";
-
 
 var currentPlayer = "x";
-
-function changePlayer() {
-    if (currentPlayer == "x") {
-        currentPlayer = "o";
-    } else if (currentPlayer == "o") {
-        currentPlayer = "x";
-    }
-}
 
 function mark(outputId) {
     var outputText = "";
@@ -39,26 +20,45 @@ function mark(outputId) {
         changeElementClass(outputId, "X");
         if (outputId == "output1") {
             board.one = "x";
-        } if (outputId == "output2") {
+        } else if (outputId == "output2") {
             board.two = "x";
-        } if (outputId == "output3") {
+        } else if (outputId == "output3") {
             board.three = "x";
-        } if (outputId == "output4") {
+        } else if (outputId == "output4") {
             board.four = "x";
-        } if (outputId == "output5") {
+        } else if (outputId == "output5") {
             board.five = "x";
-        } if (outputId == "output6") {
+        } else if (outputId == "output6") {
             board.six = "x";
-        } if (outputId == "output7") {
+        } else if (outputId == "output7") {
             board.seven = "x";
-        } if (outputId == "output8") {
+        } else if (outputId == "output8") {
             board.eight = "x";
-        } if (outputId == "output9") {
+        } else if (outputId == "output9") {
             board.nine = "x";
         }
     } else if (currentPlayer == "o") {
         outputText = "O";
         changeElementClass(outputId, "O");
+        if (outputId == "output1") {
+            board.one = "o";
+        } else if (outputId == "output2") {
+            board.two = "o";
+        } else if (outputId == "output3") {
+            board.three = "o";
+        } else if (outputId == "output4") {
+            board.four = "o";
+        } else if (outputId == "output5") {
+            board.five = "o";
+        } else if (outputId == "output6") {
+            board.six = "o";
+        } else if (outputId == "output7") {
+            board.seven = "o";
+        } else if (outputId == "output8") {
+            board.eight = "o";
+        } else if (outputId == "output9") {
+            board.nine = "o";
+        }
     }
     document.getElementById(outputId).innerHTML = outputText;
     changePlayer();
@@ -69,14 +69,21 @@ function changeElementClass(id, className) {
     el.className = className;
 }
 
-function displayCurrenttPlayer(outputId2) {
-    currentPlayer = currentPlayer;
-    var outputText2 = "";
-    if (currentPlayer = "x") {
-        outputText2 = "x";
+function changePlayer() {
+    if (currentPlayer == "x") {
+        currentPlayer = "o";
+    } else if (currentPlayer == "o") {
+        currentPlayer = "x";
     }
-    else if (currentPlayer = "o") {
-        outputText2 = "o";
+}
+
+function displayCurrentPlayer(outputId2) {
+    var outputText2 = "";
+    if (currentPlayer == "x") {
+        outputText2 = "Current Player: X";
+    }
+    else if (currentPlayer == "o") {
+        outputText2 = "Current Player: O";
     }
     document.getElementById(outputId2).innerHTML = outputText2;
 }
@@ -135,3 +142,5 @@ function gameResult(outputId3) {
         document.getElementById(outputId3).innerHTML = outputText3;
 
 }
+
+
