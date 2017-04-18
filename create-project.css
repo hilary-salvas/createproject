@@ -1,0 +1,41 @@
+.row {
+    width: 227px;
+    height: 75px;
+}
+
+.col-sm-1 {
+    width: 75px;
+    height: 75px;
+    border: solid 1px orchid;
+    background-color: lavenderblush;
+}
+
+h1 {
+    color: steelblue;
+    padding-left: 69px;
+    font-family: sans-serif
+}
+
+.X {
+    color: purple;
+    font-size: 45px;
+    text-align: center;
+    padding-top: 6px;
+}
+
+.O {
+    color: cornflowerblue;
+    font-size: 45px;
+    text-align: center;
+    padding-top: 6px;
+}
+
+.button {
+    background-color: orchid;
+    border: blu;
+    color: lavenderblush;
+    padding: 2px 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 24px;
+}

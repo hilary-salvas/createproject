@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <!-- Latest compiled and minified CSS -->
@@ -9,47 +8,58 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </head>
 
+<head>
+    <title>Tic Tac Toe</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="create-project.css">
+    <script src="create_project.js"></script>
+</head>
+<h1>Tic Tac Toe</h1>
+
 <body>
-    <h1>PLAY BINGO!</h1>
+    <div id="turn"></div>
     <div class="container">
-        <button type="button" class="btn btn-primary btn-lg">A</button>
-        <button type="button" class="btn btn-primary btn-lg">B</button>
-        <button type="button" class="btn btn-primary btn-lg">C</button>
-        <button type="button" class="btn btn-primary btn-lg">D</button>
-        <button type="button" class="btn btn-primary btn-lg">E</button>
-    </div>
-    <p>
-        <div class="container">
-            <button type="button" class="btn btn-primary btn-lg">A</button>
-            <button type="button" class="btn btn-primary btn-lg">B</button>
-            <button type="button" class="btn btn-primary btn-lg">C</button>
-            <button type="button" class="btn btn-primary btn-lg">D</button>
-            <button type="button" class="btn btn-primary btn-lg">E</button>
+        <div class="row">
+            <div class="col-sm-1" onclick="mark('output1'); displayCurrentPlayer('player'); gameResult('winner')">
+                <div id="output1"></div>
+            </div>
+            <div class="col-sm-1" onclick="mark('output2'); displayCurrentPlayer('player'); gameResult('winner')">
+                <div id="output2"></div>
+            </div>
+            <div class="col-sm-1" onclick="mark('output3'); displayCurrentPlayer('player'); gameResult('winner')">
+                <div id="output3"></div>
+            </div>
         </div>
-    </p>
-    <div class="container">
-        <button type="button" class="btn btn-primary btn-lg">A</button>
-        <button type="button" class="btn btn-primary btn-lg">B</button>
-        <button type="button" class="btn btn-primary btn-lg">C</button>
-        <button type="button" class="btn btn-primary btn-lg">D</button>
-        <button type="button" class="btn btn-primary btn-lg">E</button>
-    </div>
-    <p>
-        <div class="container">
-            <button type="button" class="btn btn-primary btn-lg">A</button>
-            <button type="button" class="btn btn-primary btn-lg">B</button>
-            <button type="button" class="btn btn-primary btn-lg">C</button>
-            <button type="button" class="btn btn-primary btn-lg">D</button>
-            <button type="button" class="btn btn-primary btn-lg">E</button>
+        <div class="row">
+            <div class="col-sm-1" onclick="mark('output4'); displayCurrentPlayer('player'); gameResult('winner')">
+                <div id="output4"></div>
+            </div>
+            <div class="col-sm-1" onclick="mark('output5'); displayCurrentPlayer('player'); gameResult('winner')">
+                <div id="output5"></div>
+            </div>
+            <div class="col-sm-1" onclick="mark('output6'); displayCurrentPlayer('player'); gameResult('winner')">
+                <div id="output6"></div>
+            </div>
         </div>
-    </p>
-    <div class="container">
-        <button type="button" class="btn btn-primary btn-lg">A</button>
-        <button type="button" class="btn btn-primary btn-lg">B</button>
-        <button type="button" class="btn btn-primary btn-lg">C</button>
-        <button type="button" class="btn btn-primary btn-lg">D</button>
-        <button type="button" class="btn btn-primary btn-lg">E</button>
+        <div class="row">
+            <div class="col-sm-1" onclick="mark('output7'); displayCurrentPlayer('player'); gameResult('winner')">
+                <div id="output7"></div>
+            </div>
+            <div class="col-sm-1" onclick="mark('output8'); displayCurrentPlayer('player'); gameResult('winner')">
+                <div id="output8"></div>
+            </div>
+            <div class="col-sm-1" onclick="mark('output9'); displayCurrentPlayer('player'); gameResult('winner')">
+                <div id="output9"></div>
+            </div>
+        </div>
     </div>
+    <div id="player"></div>
+    <div id="winner"></div>
+    <input class="button" type="button" value="Clear Board" onclick="clearBoard()">
 </body>
 
 </html>
