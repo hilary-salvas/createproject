@@ -100,7 +100,7 @@ var board = {
   }
 
   /**
-   * Called when the user clicks a box, checks to see if anyone has one or if there is a tie. Returns which player has won.
+   * Called when the user clicks a box, checks to see if anyone has won or if there is a tie. Returns which player has won.
    */
   function gameResult(outputId3) {
       var outputText3 = "";
