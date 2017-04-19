@@ -10,9 +10,13 @@
         background-color: lavenderblush;
     }
 
+    .container {
+        margin-left: 10%;
+    }
+
     h1 {
         color: steelblue;
-        padding-left: 69px;
+        padding-left: 12.5%;
         font-family: sans-serif;
         background-color: aliceblue;
     }
@@ -39,17 +43,18 @@
         text-align: center;
         display: inline-block;
         font-size: 24px;
-        margin-left: 120px;
+        margin-left: 13.5%;
+        margin-top: 5px;
     }
 
     .player {
-        color: darkmagenta;
+        color: #9355b5;
         font-family: sans-serif;
         font-size: 20px;
     }
 
     .winner {
-        color: darkorchid;
+        color: #2c9eb7;
         font-size: 30px;
         padding-left: 108px;
         margin-left: 40px;

@@ -1,4 +1,7 @@
-  var board = {
+var turns = 0;
+var currentPlayer = "x";
+
+var board = {
       one: "",
       two: "",
       three: "",
@@ -10,10 +13,9 @@
       nine: ""
   };
 
-  var turns = 0;
-
-  var currentPlayer = "x";
-
+  /**
+   * Marks a box on the board with either an X or O. Calls the changePlayer function.
+   */
   function mark(outputId) {
       var outputText = "";
       if (currentPlayer == "x") {
@@ -71,6 +73,9 @@
       el.className = className;
   }
 
+  /**
+   * Changes the current player from X to O and vice-versa.
+   */
   function changePlayer() {
       if (currentPlayer == "x") {
           currentPlayer = "o";
@@ -79,6 +84,9 @@
       }
   }
 
+  /**
+   * Function used to display the current player on the screen.
+   */
   function displayCurrentPlayer(outputId2) {
       var outputText2 = "";
       if (currentPlayer == "x") {
@@ -91,6 +99,9 @@
       document.getElementById(outputId2).innerHTML = outputText2;
   }
 
+  /**
+   * Called when the user clicks a box, checks to see if anyone has one or if there is a tie. Returns which player has won.
+   */
   function gameResult(outputId3) {
       var outputText3 = "";
       if (board.one === "x" && board.two === "x" && board.three === "x") {
@@ -130,9 +141,11 @@
       }
       changeElementClass(outputId3, "winner");
       document.getElementById(outputId3).innerHTML = outputText3;
-
   }
 
+  /**
+   * Clears the board, resets currentPlayer to X and turns to 0.
+   */
   function clearBoard() {
       document.getElementById('output1').innerHTML = "";
       document.getElementById('output2').innerHTML = "";
@@ -143,6 +156,8 @@
       document.getElementById('output7').innerHTML = "";
       document.getElementById('output8').innerHTML = "";
       document.getElementById('output9').innerHTML = "";
+      document.getElementById('winner').innerHTML = "";
+      document.getElementById('player').innerHTML = "";
       board.one = "";
       board.two = "";
       board.three = "";
@@ -155,3 +170,4 @@
       currentPlayer = "x";
       turns = 0;
   }
+
